@@ -21,4 +21,4 @@ jobs:
           git config --global user.name "xia0hj"
           git remote add template_repo https://github.com/xia0hj/test-template.git
           git pull template_repo main:template_sync --no-rebase --allow-unrelated-histories --force
-          git push origin template_sync
+          git push origin template_sync --force
