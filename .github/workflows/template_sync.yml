@@ -1,0 +1,12 @@
+name: Sync template
+on: push
+
+jobs:
+  update-template-branch:
+    name: Update branch from template repository
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print a greeting
+      run: |
+        git remote add template_repo 
+        git pull template_repo main:template
