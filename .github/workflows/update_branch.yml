@@ -16,5 +16,5 @@ jobs:
       - name: update template branch
         run: |
           git remote add template_repo https://github.com/xia0hj/test-template.git
-          git pull template_repo main:template
+          git pull template_repo main:template --ff-only
           git push origin template
