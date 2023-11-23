@@ -2,7 +2,6 @@
 
 on:
   # cronjob trigger
-  push:
   # manual trigger
   workflow_dispatch:
 jobs:
