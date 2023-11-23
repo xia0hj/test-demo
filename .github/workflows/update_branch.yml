@@ -13,10 +13,12 @@ jobs:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: 'template_sync'
       - name: update template branch
         run: |
           git config --global user.email "719887163@qq.com"
           git config --global user.name "xia0hj"
           git remote add template_repo https://github.com/xia0hj/test-template.git
-          git pull template_repo main:template --no-rebase --allow-unrelated-histories
-          git push origin template
+          git pull template_repo main:template_sync --no-rebase --allow-unrelated-histories
+          git push origin template_sync
