@@ -19,4 +19,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_repo_path: xia0hj/test-template
           upstream_branch: main # defaults to main
-          pr_labels: label1 # optional, no default
+          pr_labels:  # optional, no default
