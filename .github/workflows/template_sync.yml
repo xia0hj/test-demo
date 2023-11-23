@@ -6,7 +6,10 @@ jobs:
     name: Update branch from template repository
     runs-on: ubuntu-latest
     steps:
-    - name: Print a greeting
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Update template branch
       run: |
         git remote add template_repo 
         git pull template_repo main:template
+        git push origin template
